@@ -1,8 +1,9 @@
 #ifndef SHOPPING_H_
 #define SHOPPING_H_
 
-#include <vector>
 #include "./goods.h"
+
+#include <vector>
 
 // Shopping class presents List of shopping.
 // Example:
@@ -16,7 +17,7 @@
 class Shopping{
  public:
   void PushList(Goods object);
-  Goods GetLastElement();
+  Goods GetLastElement() const;
   void PrintList();
   void SortByPrice();
   void SortByIndex();

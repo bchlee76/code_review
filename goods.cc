@@ -1,17 +1,17 @@
 #include "./goods.h"
 
 // Set member variable of goods with given index and price values
-void Goods::SetGoodsInfo(int index, int price) {
+void Goods::SetGoodsInfo(const int index, const int price) {
   goods_index_ = index;
   goods_price_ = price;
 }
 
 // Return index information
-int Goods::GetIndex() {
+int Goods::GetIndex() const {
   return goods_index_;
 }
 
 // Return price informaiton
-int Goods::GetPrice() {
+int Goods::GetPrice() const {
   return goods_price_;
 }
